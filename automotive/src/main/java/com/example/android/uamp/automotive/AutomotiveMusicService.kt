@@ -64,9 +64,9 @@ class AutomotiveMusicService : MusicService() {
         mediaSessionConnector.registerCustomCommandReceiver(AutomotiveCommandReceiver())
 
         // Require the user to be logged in for demonstration purposes.
-        if (!isAuthenticated()) {
+        /*if (!isAuthenticated()) {
             requireLogin()
-        }
+        }*/
     }
 
     private fun onLogin(email: String, password: String): Boolean {
